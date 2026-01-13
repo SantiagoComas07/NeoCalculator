@@ -4,3 +4,27 @@
 @theme{
     --font-sans: "Rubik", ui-sans-serif, system-ui, sans-serif;
 }
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+
+:root{
+    --background-color: var(--color-sky-100);
+    --calculator-container: var(--color-zinc-50);
+    --color-screen: var(--color-slate-50);
+    --text-color: var(--color-sky-800);
+    --button-color: var(--color-sky-200);
+    --button-primary-color: var(--color-sky-300);
+    --button-hover-color: var(--color-sky-400);
+
+}
+
+[data-theme="dark"] {
+    --background-color: var(--color-slate-600);
+    --calculator-container: var(--color-slate-800);
+    --text-color: var(--color-white);
+    --color-screen: var(--color-sky-800);
+    --button-color: var(--color-sky-900);
+    --button-primary-color: var(--color-sky-950);
+    --button-hover-color: var(--color-sky-700);
+}
