@@ -7,9 +7,37 @@
     <title>neocalculator</title>
   </head>
   <body>
-    <section id="view">
+    <section  id="view" class="w-full h-[100vw] flex justify-center items-center ">
+<!--  Dark mode bg-slate-950-->
+      <div  id="calculator_container" class="w-[20rem] h-93  py-5 px-2  justify-around bg-zinc-50">
+          <div id="screen" class="w-full h-15 text-2xl pr-5 py-1 flex justify-end items-center bg-slate-100 rounded-xs mb-3 text-sky-800 " >0</div>
+          <div class="h-[80%] grid grid-rows-5 grid-cols-4 gap-1">
+
+            <button id="clear" class=" py-2 px-4 col-span-2 bg-sky-300 hover:bg-cyan-200 hover:cursor-pointer rounded-xs text-sky-700 active:text-lg active:bg-cyan-600 ">AC</button>
+            <button id="delete" class="  py-2 px-4 bg-sky-300 hover:bg-red-200 rounded-xs hover:cursor-pointer active:text-lg text-red-700 ">DEL</button>
+            <button id="division" class="  py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">/</button>
 
 
+            <button id="7" class="  py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">7</button>
+            <button id="8" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">8</button>
+            <button id="9" class="  py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">9</button>
+            <button id="por" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">*</button>
+
+
+            <button id="4" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">4</button>
+            <button id="5" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">5</button>
+            <button id="6" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">6</button>
+            <button id="+" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">+</button>
+
+            <button id="1" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">1</button>
+            <button id="2" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">2</button>
+            <button id="3" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">3</button>
+            <button id="-" class="  py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">-</button>
+
+            <button id="0" class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">0</button>
+            <button id="." class="   py-2 px-4 bg-sky-200 hover:bg-sky-400 hover:cursor-pointer rounded-xs">.</button>
+            <button id="=" class="   py-2 px-4 col-span-2 bg-sky-300 hover:bg-emerald-200 rounded-xs text-emerald-700">=</button>
+        </div>
     </section>
     <script type="module" src="/src/main.js"></script>
   </body>
