@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -7,15 +7,16 @@
     <title>neocalculator</title>
   </head>
   <body>
+
     <section  id="view" class="w-full h-screen flex justify-center items-center bg-(--background-color) dark: ">
 <!-- To Become the text-lg to a variable-->
-      <div  id="calculator_container" class="w-[20rem] h-93  py-5 px-2 rounded-xs  justify-around bg-zinc-50 shadow-lg shadow-zinc-200 dark:bg-(--calculator-container) dark:shadow-slate-800 ">
+      <div  id="calculator_container" class="w-68 h-85 md:w-[20rem] md:h-93  py-5 px-2 rounded-xs  justify-around bg-zinc-50 shadow-lg shadow-zinc-200  dark:bg-(--calculator-container) dark:shadow-slate-800 ">
           <div id="screen" class="w-full h-15 text-2xl pr-5 py-1 flex justify-end items-center bg-slate-100 rounded-xs mb-3 text-(--text-color)  dark:bg-(--color-screen) dark:text-(--text-color)"  >
 
           </div>
           <div class="h-[80%] grid grid-rows-5 grid-cols-4 gap-1">
 
-            <button id="clear" class="button  py-2 px-4 col-span-2 bg-(--button-hover-color) hover:bg-cyan-200 hover:cursor-pointer rounded-xs text-sky-700 active:text-lg  dark:bg-(--button-primary-color) dark:hover:bg-cyan-500">AC</button>
+            <button id="clear" class="button  py-2 px-4 col-span-2 bg-(--button-hover-color) hover:bg-cyan-200 hover:cursor-pointer  rounded-xs text-sky-700 active:text-lg  dark:bg-(--button-primary-color) dark:hover:bg-cyan-500">AC</button>
             <button id="delete" class="button  py-2 px-4 bg-(--button-hover-color) hover:bg-red-200 rounded-xs hover:cursor-pointer active:text-lg text-red-700 dark:bg-(--button-primary-color) dark:hover:bg-red-500">DEL</button>
             <button id="division" class="button  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color)  active:text-lg ">/</button>
 
@@ -40,7 +41,19 @@
             <button id="." class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color)">.</button>
             <button id="equal" class=" button   py-2 px-4 col-span-2 bg-(--button-color) hover:bg-emerald-200 rounded-xs text-emerald-700 dark:bg-(--button-primary-color) dark:text-(--text-color) dark:hover:bg-green-500 active:text-xl ">=</button>
         </div>
+
+        <div class="w-30  gap-3.5 mt-5.5 flex  items-center "> <span class="text-xs text-cyan-600 font-bold">darkmode</span>
+            <label
+                    class="relative inline-block h-5 w-[48px]  cursor-pointer rounded-md bg-zinc-200  transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-[#1976D2]"
+            >
+              <input id="theme-toggle" type="checkbox" id="AcceptConditions" class="peer sr-only" />
+              <span
+                      class="w-2 absolute h-4.5 inset-y-0 start-0 m-0.5 ml-1 size-5 rounded-sm bg-gray-300  transition-all peer-checked:start-7 bg-sky-400 peer-checked:w-3 peer-checked:bg-white peer-checked:ring-transparent"
+              ></span>
+            </label>
+        </div>
     </section>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

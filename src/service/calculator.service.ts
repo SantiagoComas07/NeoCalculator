@@ -60,8 +60,8 @@ buttons.forEach((button)=>{
                 try {
 
                         let data = screenDom.textContent;
-                        data = data.replace(/\s+/g, '').replace('=', '');
-                        const operator = data.match(/[+\-*/]/)?.[0];
+                        data = data .replace(/x/g, '*').replace(/\s+/g, '').replace('=', '');
+                        const operator = data.match(/[+\-=*/]/)?.[0];
                         if (!operator) return;
                         const [a, b] = data.split(operator);
                         if (!a || !b) {
