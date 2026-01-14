@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -9,34 +9,36 @@
   <body>
     <section  id="view" class="w-full h-screen flex justify-center items-center bg-(--background-color) dark: ">
 <!-- To Become the text-lg to a variable-->
-      <div  id="calculator_container" class="w-[20rem] h-93  py-5 px-2 rounded-xs  justify-around bg-zinc-50 dark:bg-(--calculator-container)">
-          <div id="screen" class="w-full h-15 text-2xl pr-5 py-1 flex justify-end items-center bg-slate-100 rounded-xs mb-3 text-(--text-color)  dark:bg-(--color-screen) dark:text-(--text-color)"  >0</div>
+      <div  id="calculator_container" class="w-[20rem] h-93  py-5 px-2 rounded-xs  justify-around bg-zinc-50 shadow-lg shadow-zinc-200 dark:bg-(--calculator-container) dark:shadow-slate-800 ">
+          <div id="screen" class="w-full h-15 text-2xl pr-5 py-1 flex justify-end items-center bg-slate-100 rounded-xs mb-3 text-(--text-color)  dark:bg-(--color-screen) dark:text-(--text-color)"  >
+
+          </div>
           <div class="h-[80%] grid grid-rows-5 grid-cols-4 gap-1">
 
-            <button id="clear" class=" py-2 px-4 col-span-2 bg-(--button-hover-color) hover:bg-cyan-200 hover:cursor-pointer rounded-xs text-sky-700 active:text-lg  dark:bg-(--button-primary-color) dark:hover:bg-cyan-500">AC</button>
-            <button id="delete" class="  py-2 px-4 bg-(--button-hover-color) hover:bg-red-200 rounded-xs hover:cursor-pointer active:text-lg text-red-700 dark:bg-(--button-primary-color) dark:hover:bg-red-500">DEL</button>
-            <button id="division" class="  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color)  active:text-lg ">/</button>
+            <button id="clear" class="button  py-2 px-4 col-span-2 bg-(--button-hover-color) hover:bg-cyan-200 hover:cursor-pointer rounded-xs text-sky-700 active:text-lg  dark:bg-(--button-primary-color) dark:hover:bg-cyan-500">AC</button>
+            <button id="delete" class="button  py-2 px-4 bg-(--button-hover-color) hover:bg-red-200 rounded-xs hover:cursor-pointer active:text-lg text-red-700 dark:bg-(--button-primary-color) dark:hover:bg-red-500">DEL</button>
+            <button id="division" class="button  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color)  active:text-lg ">/</button>
 
 
-            <button id="7" class="  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">7</button>
-            <button id="8" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">8</button>
-            <button id="9" class="  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">9</button>
+            <button id="7" class="button  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">7</button>
+            <button id="8" class="button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">8</button>
+            <button id="9" class="button  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">9</button>
             <button id="por" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:bg-(--button-color) dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">x</button>
 
 
-            <button id="4" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">4</button>
-            <button id="5" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">5</button>
-            <button id="6" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">6</button>
-            <button id="+" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">+</button>
+            <button id="4" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">4</button>
+            <button id="5" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">5</button>
+            <button id="6" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">6</button>
+            <button id="+" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">+</button>
 
-            <button id="1" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">1</button>
-            <button id="2" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">2</button>
-            <button id="3" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">3</button>
-            <button id="-" class="  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">-</button>
+            <button id="1" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">1</button>
+            <button id="2" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">2</button>
+            <button id="3" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">3</button>
+            <button id="-" class=" button  py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">-</button>
 
-            <button id="0" class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">0</button>
-            <button id="." class="   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color)">.</button>
-            <button id="=" class="   py-2 px-4 col-span-2 bg-(--button-color) hover:bg-emerald-200 rounded-xs text-emerald-700 dark:bg-(--button-primary-color) dark:text-(--text-color) dark:hover:bg-green-500 active:text-xl ">=</button>
+            <button id="0" class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color) dark:hover:bg-(--button-hover-color) active:text-lg">0</button>
+            <button id="." class=" button   py-2 px-4 bg-(--button-color) hover:bg-(--button-hover-color) hover:cursor-pointer rounded-xs dark:text-(--text-color)">.</button>
+            <button id="equal" class=" button   py-2 px-4 col-span-2 bg-(--button-color) hover:bg-emerald-200 rounded-xs text-emerald-700 dark:bg-(--button-primary-color) dark:text-(--text-color) dark:hover:bg-green-500 active:text-xl ">=</button>
         </div>
     </section>
     <script type="module" src="/src/main.js"></script>
